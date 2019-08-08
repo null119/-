@@ -22,6 +22,10 @@ user_agent_pc = [
     'Mozilla/5.0.html (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.html.2125.122 UBrowser/4.0.html.3214.0.html Safari/537.36',
 ]
 
+#随机获取一个PC headers user_agent
+def get_user_agent_pc():
+    return random.choice(user_agent_pc)
+
 #百度网盘转存
 #   furl = 分享链接
 #   verify = 提取码
